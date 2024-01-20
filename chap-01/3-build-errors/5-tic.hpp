@@ -2,6 +2,8 @@
 
 #include "5-tac.hpp"
 
+struct Tac;
+
 struct Tic
 {
     // Invert value with tac.

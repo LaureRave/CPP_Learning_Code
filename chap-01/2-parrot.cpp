@@ -21,6 +21,7 @@ int main()
     {
         std::cout << "Craow " << l << std::endl;
     }*/
+
     std::cout << lines.str();
 
     return 0;

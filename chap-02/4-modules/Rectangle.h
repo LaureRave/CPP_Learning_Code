@@ -3,8 +3,6 @@
 class Rectangle
 {
 public:
-    static inline float Rectangle::_default_size = 0.f;
-    
     Rectangle();
     Rectangle(float length, float width);
     Rectangle(float size);
@@ -13,8 +11,10 @@ public:
     float get_width() const { return _width; }
 
     void scale(float ratio);
+    static void set_default_size(float size);
 
 private:
+    static float _default_size;
     float _length;
     float _width;
 };

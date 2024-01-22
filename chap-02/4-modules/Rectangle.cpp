@@ -20,3 +20,7 @@ void Rectangle::scale(float ratio)
     _width *= ratio;
 }
 
+void Rectangle::set_default_size(float size)
+{
+    _default_size = size;
+}

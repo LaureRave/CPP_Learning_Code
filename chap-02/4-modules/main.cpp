@@ -13,5 +13,6 @@ int main()
     Rectangle square(2.5f);
     std::cout << "{ L: " << rect.get_length() << " }" << std::endl;
 
+
     return 0;
 }

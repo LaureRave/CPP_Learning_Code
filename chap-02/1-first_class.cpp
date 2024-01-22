@@ -7,7 +7,7 @@ class Person
     unsigned int _age = 0u;
 
     public:
-    void set_name(const std::string& name) 
+    void set_name(std::string name) 
     {
         _name = name;
     }

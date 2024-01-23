@@ -13,7 +13,7 @@ int main()
     auto vertex = polygon[1];
     std::cout << "(" << vertex.first << "," << vertex.second << ")" << std::endl; // -> (4,5)
 
-    // std::cout << polygon << std::endl;
+    std::cout << polygon << std::endl;
 
     return 0;
 }

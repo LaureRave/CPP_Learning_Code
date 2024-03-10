@@ -3,6 +3,7 @@
 #include "Chicken.h"
 #include "Cow.h"
 #include "Dog.h"
+#include "Opera.h"
 
 #include <vector>
 
@@ -10,7 +11,7 @@ void sing_a_lot(const Animal& animal, unsigned int times)
 {
     while (times > 0)
     {
-        while (--times > 0) 
+        while (--times > 0)
         {
             animal.sing(' ');
         }
@@ -18,9 +19,9 @@ void sing_a_lot(const Animal& animal, unsigned int times)
     }
 }
 
-void sing_chorus(const std::vector<Animal*>& animals) 
+void sing_chorus(const std::vector<Animal*>& animals)
 {
-    for (const auto* animal : animals) 
+    for (const auto* animal : animals)
     {
         animal->sing(' ');
     }
@@ -45,6 +46,9 @@ int main()
     animals.push_back(&cat);
 
     sing_chorus(animals);
+
+    Opera opera;
+    opera.sing();
 
     return 0;
 }
